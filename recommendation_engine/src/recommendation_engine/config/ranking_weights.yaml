@@ -1,0 +1,22 @@
+# Default ranking weights (plan § Stage 6). Re-tune via SQL on sub-scores — no LLM re-run.
+version: v1.0
+weights:
+  source_count: 0.20
+  signal_urgency: 0.15
+  market_validation: 0.15
+  sap_relevance: 0.15
+  source_diversity: 0.10
+  feasibility: 0.10
+  recency: 0.05
+  specificity: 0.05
+  novelty: 0.05
+
+# Derived axes for effort / impact storytelling (not in final_score unless you extend weights)
+impact_components:
+  - source_count
+  - signal_urgency
+  - market_validation
+  - sap_relevance
+  - novelty
+effort_components:
+  - feasibility

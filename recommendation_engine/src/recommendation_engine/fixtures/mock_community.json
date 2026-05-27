@@ -1,0 +1,34 @@
+[
+  {
+    "post_id": "post-101",
+    "author_role": "Full-stack Engineer",
+    "timestamp": "2026-05-15T09:00:00Z",
+    "upvote_count": 42,
+    "tags": ["copilot", "code-review", "sap-build"],
+    "body": "We need something like GitHub Copilot but aware of our ABAP and CAP stacks. Embed a copilot panel that suggests BTP best practices on each pull request. Upvoted heavily on our internal channel."
+  },
+  {
+    "post_id": "post-102",
+    "author_role": "UX Designer",
+    "timestamp": "2026-05-18T16:20:00Z",
+    "upvote_count": 18,
+    "tags": ["onboarding", "ai-assistant"],
+    "body": "New hires struggle to find the right SAP documentation during onboarding. An AI assistant that walks them through role-based learning paths would save weeks. Several designers echoed this in comments."
+  },
+  {
+    "post_id": "post-103",
+    "author_role": "Experience Garage Lead",
+    "timestamp": "2026-05-20T11:00:00Z",
+    "upvote_count": 67,
+    "tags": ["missions", "governance", "reuse"],
+    "body": "Community asks for a single place to discover which AI missions are active, who owns them, and which prototypes are safe to extend. Bonus if it surfaces related market trends when proposing a new mission."
+  },
+  {
+    "post_id": "post-104",
+    "author_role": "Data Scientist",
+    "timestamp": "2026-05-22T08:45:00Z",
+    "upvote_count": 31,
+    "tags": ["rag", "evaluation", "btp"],
+    "body": "Teams prototype RAG pipelines without a shared eval harness. A lightweight mission to standardize retrieval metrics and golden Q&A sets for internal doc corpora would accelerate every follow-on experiment."
+  }
+]

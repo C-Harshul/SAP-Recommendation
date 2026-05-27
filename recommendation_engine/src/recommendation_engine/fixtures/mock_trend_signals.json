@@ -1,0 +1,57 @@
+[
+  {
+    "trend_id": "trend-agentic-rag-2026",
+    "theme": "Agentic RAG for enterprise knowledge",
+    "summary": "Multiple sources report shift from naive RAG to agentic retrieval with tool use for internal doc graphs. Relevant for onboarding copilots and developer assistants.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/example-agentic-rag",
+      "https://news.ycombinator.com/item?id=example"
+    ],
+    "source_count": 12,
+    "momentum": "rising",
+    "novelty": "emerging",
+    "first_seen": "2026-04-01T00:00:00Z",
+    "peak_week": "2026-05-12",
+    "last_updated": "2026-05-20T00:00:00Z"
+  },
+  {
+    "trend_id": "trend-enterprise-copilot-pr",
+    "theme": "AI code review copilots in CI/CD",
+    "summary": "GitHub, GitLab, and enterprise vendors shipping PR-aware copilots with policy and stack-specific hints. Strong builder-community interest on Hacker News and Product Hunt.",
+    "evidence_urls": [
+      "https://github.com/trending/example-copilot",
+      "https://www.producthunt.com/posts/example"
+    ],
+    "source_count": 8,
+    "momentum": "rising",
+    "novelty": "established",
+    "first_seen": "2026-03-15T00:00:00Z",
+    "last_updated": "2026-05-19T00:00:00Z"
+  },
+  {
+    "trend_id": "trend-internal-ai-governance",
+    "theme": "Internal AI experiment registries",
+    "summary": "Enterprises adopting catalogs of AI pilots with ownership metadata for reuse and compliance. Aligns with EU AI Act documentation expectations.",
+    "evidence_urls": [
+      "https://venturebeat.com/example-ai-registry"
+    ],
+    "source_count": 5,
+    "momentum": "stable",
+    "novelty": "emerging",
+    "first_seen": "2026-02-20T00:00:00Z",
+    "last_updated": "2026-05-10T00:00:00Z"
+  },
+  {
+    "trend_id": "trend-cap-learning-paths",
+    "theme": "Role-based CAP learning paths",
+    "summary": "Learning platforms updating CAP and BTP curricula with personalized paths; edtech product roadmaps emphasize adaptive onboarding.",
+    "evidence_urls": [
+      "https://www.coursera.org/example-cap-path"
+    ],
+    "source_count": 4,
+    "momentum": "stable",
+    "novelty": "established",
+    "first_seen": "2026-01-10T00:00:00Z",
+    "last_updated": "2026-05-05T00:00:00Z"
+  }
+]

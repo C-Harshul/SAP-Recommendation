@@ -1,0 +1,6 @@
+.env
+.env.local
+*.pem
+
+frontend/node_modules/
+frontend/dist/

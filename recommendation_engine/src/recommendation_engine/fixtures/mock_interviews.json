@@ -1,0 +1,18 @@
+[
+  {
+    "interview_id": "int-001",
+    "participant_role": "SAP BTP Developer",
+    "timestamp": "2026-05-10T14:00:00Z",
+    "interviewer": "EG Research",
+    "duration_minutes": 45,
+    "tags": ["onboarding", "documentation"],
+    "transcript": "When I joined the garage last quarter, I spent three weeks just figuring out which Confluence space had the real APIs. There's no map from my role to the CAP samples that matter. I'd love something that learns what I'm building and surfaces the right docs and internal prototypes automatically."
+  },
+  {
+    "interview_id": "int-002",
+    "participant_role": "Product Owner, SAP Build",
+    "timestamp": "2026-05-12T10:30:00Z",
+    "tags": ["visibility", "governance"],
+    "transcript": "Nobody knows what other teams already built—we duplicate work every sprint. We need a mission dashboard that shows active AI experiments, owners, and whether something is ready to reuse. I don't have a specific UI in mind but the pain is real every planning session."
+  }
+]

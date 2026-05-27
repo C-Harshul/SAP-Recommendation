@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eg-recommendation-engine"
+version = "0.1.0"
+description = "SAP Experience Garage mission recommendation LangGraph pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=1.0",
+    "boto3>=1.34",
+    "httpx>=0.27",
+    "langgraph>=0.3",
+    "langsmith>=0.3",
+    "numpy>=1.26",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "PyYAML>=6.0",
+    "scikit-learn>=1.4",
+    "structlog>=24.1",
+    "tenacity>=8.2",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "markdown>=3.8",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg[binary,pool]>=3.2", "pgvector>=0.3"]
+dev = [
+    "pytest>=8.1",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.3",
+    "mypy>=1.9",
+]
+
+[project.scripts]
+eg-recommend = "recommendation_engine.main:cli"
+eg-api = "recommendation_engine.api.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/recommendation_engine"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/recommendation_engine" = "recommendation_engine"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
