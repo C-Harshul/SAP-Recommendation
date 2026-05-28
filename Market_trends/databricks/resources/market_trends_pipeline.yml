@@ -1,0 +1,23 @@
+resources:
+  pipelines:
+    market_trends_content_pipeline:
+      name: "[${bundle.target}] EG market trends — bronze → silver content"
+      catalog: ${var.catalog}
+      target: ${var.schema}
+      serverless: true
+      photon: true
+      channel: CURRENT
+      development: true
+      continuous: false
+      edition: ADVANCED
+      libraries:
+        - notebook:
+            path: ../src/notebooks/market_trends_content_pipeline.py
+      configuration:
+        bronze_s3_path: ${var.bronze_s3_path}
+        content_fetch_delay_seconds: ${var.content_fetch_delay_seconds}
+      permissions:
+        - level: CAN_VIEW
+          group_name: users
+        - level: CAN_RUN
+          group_name: users

@@ -1,0 +1,43 @@
+# Experience Garage — market trends lakehouse (bronze → silver)
+# Deploy: databricks bundle deploy -t dev
+# Run pipeline: databricks bundle run market_trends_content_pipeline -t dev
+
+bundle:
+  name: eg-market-trends
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    description: Unity Catalog for market trends (Experience Garage)
+    default: market-trends-exp
+  schema:
+    description: Schema for bronze/silver tables
+    default: experience_garage
+  bronze_s3_path:
+    description: Bronze on AWS S3 (requires UC external location on this prefix)
+    default: s3://market-trend-exp2/bronze
+  content_fetch_delay_seconds:
+    description: Min delay between HTTP fetches per executor partition
+    default: "2"
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-de47fb26-18b8.cloud.databricks.com
+    variables:
+      catalog: market-trends-exp
+      schema: experience_garage_dev
+      # UC external location on market-trend-exp2 not configured yet — use Volume sync
+      bronze_s3_path: dbfs:/Volumes/market-trends-exp/experience_garage_dev/bronze
+
+  prod:
+    mode: production
+    workspace:
+      host: https://dbc-de47fb26-18b8.cloud.databricks.com
+    variables:
+      catalog: market-trends-exp
+      schema: experience_garage

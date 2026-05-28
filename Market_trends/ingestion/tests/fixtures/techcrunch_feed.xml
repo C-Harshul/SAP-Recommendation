@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>TechCrunch AI</title>
+    <item>
+      <title>Test AI Article</title>
+      <link>https://techcrunch.com/2026/05/19/test-ai-article/</link>
+      <guid>https://techcrunch.com/?p=12345</guid>
+      <pubDate>Mon, 19 May 2026 14:32:00 +0000</pubDate>
+      <description>Frontier model roundup</description>
+    </item>
+  </channel>
+</rss>

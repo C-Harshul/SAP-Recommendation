@@ -1,0 +1,28 @@
+resources:
+  jobs:
+    market_trends_llm_insights:
+      name: "[${bundle.target}] EG market trends — LLM gold insights"
+      description: Summarize silver article text and generate mission brief for Experience Garage
+      max_concurrent_runs: 1
+      tasks:
+        - task_key: llm_gold
+          notebook_task:
+            notebook_path: ../src/notebooks/market_trends_llm_insights.py
+            base_parameters:
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+              summary_limit: "200"
+              mission_source_limit: "30"
+              run_mission_brief: "true"
+          environment_key: Default
+
+      environments:
+        - environment_key: Default
+          spec:
+            client: "1"
+
+      permissions:
+        - level: CAN_VIEW
+          group_name: users
+        - level: CAN_MANAGE_RUN
+          group_name: users

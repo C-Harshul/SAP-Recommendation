@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Pluralsight Blog</title>
+    <item>
+      <title>New AI Learning Path</title>
+      <link>https://www.pluralsight.com/blog/ai-learning-path</link>
+      <guid>ps-blog-999</guid>
+      <pubDate>Tue, 18 May 2026 10:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

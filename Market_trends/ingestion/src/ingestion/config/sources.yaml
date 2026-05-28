@@ -1,0 +1,260 @@
+# Experience Garage market trends source registry.
+# Credentials are NEVER stored here — use env vars or AWS Secrets Manager.
+
+sources:
+  # --- Category A: builder ---
+  - id: kaggle
+    category: builder
+    connector: kaggle
+    cadence_minutes: 60
+    config:
+      tags: [machine-learning, deep-learning, nlp, computer-vision, llm]
+      content_types: [competition, dataset, notebook]
+
+  - id: hackerrank
+    category: builder
+    connector: hackerrank
+    cadence_minutes: 360
+
+  - id: ideanote
+    category: builder
+    connector: ideanote
+    cadence_minutes: 60
+
+  - id: udemy
+    category: builder
+    connector: udemy
+    cadence_minutes: 360
+
+  - id: coursera
+    category: builder
+    connector: coursera
+    cadence_minutes: 60
+
+  - id: forage
+    category: builder
+    connector: forage
+    cadence_minutes: 360
+
+  # --- Category B: news (RSS) ---
+  - id: techcrunch_ai
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://techcrunch.com/category/artificial-intelligence/feed/
+      keyword_filter: null
+
+  - id: venturebeat_ai
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://venturebeat.com/category/ai/feed/
+      keyword_filter: null
+
+  - id: mit_tech_review
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.technologyreview.com/feed/
+      keyword_filter: [AI, artificial intelligence, machine learning, LLM]
+
+  - id: the_verge_ai
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+      keyword_filter: null
+
+  - id: ars_technica_ai
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://feeds.arstechnica.com/arstechnica/technology-lab
+      keyword_filter: [AI, artificial intelligence, machine learning, LLM, OpenAI, Anthropic]
+
+  - id: wired_ai
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.wired.com/feed/tag/ai/latest/rss
+      keyword_filter: null
+
+  - id: the_information
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.theinformation.com/feed
+      keyword_filter: [AI, artificial intelligence, OpenAI, Anthropic, LLM]
+
+  - id: a16z_blog
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://a16z.com/feed/
+      keyword_filter: [AI, artificial intelligence, machine learning, LLM, generative]
+
+  - id: anthropic_blog
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.anthropic.com/rss.xml
+      keyword_filter: null
+
+  - id: openai_blog
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://openai.com/blog/rss.xml
+      keyword_filter: null
+
+  - id: google_ai_blog
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://blog.research.google/atom.xml
+      keyword_filter: [AI, machine learning, LLM, neural]
+
+  - id: latent_space
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.latent.space/feed
+      keyword_filter: null
+
+  - id: import_ai
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://jack-clark.net/?format=rss
+      keyword_filter: null
+
+  - id: the_decoder
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://the-decoder.com/feed/
+      keyword_filter: null
+
+  - id: stratechery
+    category: news
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://stratechery.com/feed/
+      keyword_filter: [AI, artificial intelligence, OpenAI, Anthropic, Google, Microsoft, LLM]
+
+  # --- Category B: news (APIs) ---
+  - id: hacker_news
+    category: news
+    connector: hacker_news
+    cadence_minutes: 60
+    config:
+      keywords: [ai, llm, claude, gpt, anthropic, openai, hugging face, agent]
+      min_score: 50
+
+  - id: product_hunt
+    category: news
+    connector: product_hunt
+    cadence_minutes: 60
+
+  - id: huggingface_trending
+    category: news
+    connector: huggingface_trending
+    cadence_minutes: 60
+
+  - id: github_trending
+    category: news
+    connector: github_trending
+    cadence_minutes: 360
+
+  - id: arxiv_ai
+    category: news
+    connector: arxiv
+    cadence_minutes: 1440
+
+  # --- Category C: learning (RSS blogs) ---
+  - id: linkedin_learning_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.linkedin.com/blog/learning/feed
+      keyword_filter: null
+
+  - id: pluralsight_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.pluralsight.com/blog/rss.xml
+      keyword_filter: null
+
+  - id: oreilly_radar
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.oreilly.com/radar/feed/index.xml
+      keyword_filter: [AI, machine learning, data]
+
+  - id: datacamp_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.datacamp.com/blog/rss.xml
+      keyword_filter: null
+
+  - id: codecademy_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.codecademy.com/resources/blog/rss.xml
+      keyword_filter: [AI, artificial intelligence, machine learning]
+
+  - id: edx_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://blog.edx.org/feed
+      keyword_filter: [AI, artificial intelligence, machine learning]
+
+  - id: udacity_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://udacity.com/blog/feed
+      keyword_filter: null
+
+  - id: khan_academy_news
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://blog.khanacademy.org/feed/
+      keyword_filter: [AI, artificial intelligence, Khanmigo]
+
+  - id: skillshare_blog
+    category: learning
+    connector: rss_generic
+    cadence_minutes: 30
+    config:
+      url: https://www.skillshare.com/blog/feed/
+      keyword_filter: null

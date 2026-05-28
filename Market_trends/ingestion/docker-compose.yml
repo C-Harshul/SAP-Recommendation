@@ -1,0 +1,46 @@
+services:
+  localstack:
+    image: localstack/localstack:3
+    ports:
+      - "4566:4566"
+    environment:
+      SERVICES: s3
+      DEFAULT_REGION: us-east-1
+    volumes:
+      - ./scripts/init-localstack.sh:/etc/localstack/init/ready.d/init-s3.sh
+
+  ingestion:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - localstack
+    environment:
+      EG_ENV: dev
+      EG_S3_BUCKET: eg-lakehouse
+      AWS_REGION: us-east-1
+      AWS_ENDPOINT_URL: http://localstack:4566
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      EG_LOG_LEVEL: INFO
+      KAGGLE_USERNAME: ${KAGGLE_USERNAME:-}
+      KAGGLE_KEY: ${KAGGLE_KEY:-}
+    ports:
+      - "8080:8080"
+    command: ["python", "-m", "ingestion.main", "health"]
+
+  ingestion-run:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    profiles: ["run"]
+    depends_on:
+      - localstack
+    environment:
+      EG_ENV: dev
+      EG_S3_BUCKET: eg-lakehouse
+      AWS_REGION: us-east-1
+      AWS_ENDPOINT_URL: http://localstack:4566
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+    entrypoint: ["python", "-m", "ingestion.main", "run"]

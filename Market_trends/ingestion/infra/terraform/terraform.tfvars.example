@@ -1,0 +1,5 @@
+# Copy to terraform.tfvars and set your ingestion IAM principal (from: python scripts/aws_whoami.py)
+ingestion_iam_user_arn = "arn:aws:iam::ACCOUNT_ID:user/YOUR_INGESTION_USER"
+
+# After creating Databricks UC storage credential (IAM role):
+# databricks_uc_role_arn = "arn:aws:iam::ACCOUNT_ID:role/YOUR_DATABRICKS_UC_ROLE"

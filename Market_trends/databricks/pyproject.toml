@@ -1,0 +1,12 @@
+[project]
+name = "eg-market-trends-databricks"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27", "trafilatura>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
