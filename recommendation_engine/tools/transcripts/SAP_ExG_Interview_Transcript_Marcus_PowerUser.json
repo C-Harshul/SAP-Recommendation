@@ -1,0 +1,579 @@
+{
+  "interview_id": "SAP_ExG_Interview_Transcript_Marcus_PowerUser_20260530",
+  "source_file": "SAP_ExG_Interview_Transcript_Marcus_PowerUser.docx",
+  "title": "Synthetic User Interview — Transcript",
+  "project": "SAP Experience Garage — AI Platform Innovation (Project B, Team 11)",
+  "synthetic_research_note": "This transcript is a synthetic role-play, generated as part of Stage 3 of the team’s user-research workstream. No real SAP employee was interviewed. The participant (“Marcus Bellini”) is a fictional composite persona — the Solution-Minded Power User archetype, operating as both Challenge Owner and Solver — anchored to publicly observable patterns in SAP’s consulting workforce. Stage directions appear in italics. The transcript should be treated as a hypothesis-generation artefact, not as validated user research.",
+  "metadata": {
+    "date": "[redacted]",
+    "duration": "32 min 41 sec",
+    "format": "MS Teams video, recording with consent",
+    "moderator": "Project B research team",
+    "participant": {
+      "name": "Marcus Bellini",
+      "role": "Senior Digital Transformation Consultant, SAP Italy & Southern Europe",
+      "persona_type": "Solution-Minded Power User (top-50 contributor by badge count; Challenge Owner ×6 + heavy Solver)"
+    }
+  },
+  "stats": {
+    "block_count": 7,
+    "total_turns": 72,
+    "moderator_turns": 36,
+    "participant_turns": 36
+  },
+  "blocks": [
+    {
+      "name": "Warm-up",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Hi Marcus, thanks for making time. Quick framing — this is going to be pretty conversational, I’ll have a set of topics I want to cover, but feel free to go on tangents. The more concrete, the better. Sound okay?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yeah, yeah, perfect. Just so you know — I have a lot of opinions about the platform. I’ve been on it for three and a half years, I run challenges, I do missions, I’ve submitted ideas. So if I start ranting at some point, just cut me off.",
+          "stage_directions": [
+            "laughs"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s actually exactly what I want. So just to start — tell me about your day-to-day, and where the Experience Garage fits in.",
+          "stage_directions": [
+            "laughs"
+          ]
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Sure. So I’m a Senior Digital Transformation Consultant, based in Milan, I cover Southern Europe — mostly Italy, Spain, a bit of Greece, Portugal occasionally. My day-to-day is client-facing — I run transformation projects for enterprise customers, lots of S/4HANA migrations, lots of process redesign work, increasingly a lot of AI-adjacent conversations because every client wants to know what they should be doing with Joule and Build. Experience Garage — okay so for me the platform plays three roles. One: I use it as a learning tool, missions, staying current. Two: I post challenges when I have a real client problem that I think the wider SAP community could help with, that’s the Challenge Owner hat. Three — and this is the one I think is most underrated — I use it as a kind of internal expertise discovery layer. Like, when I’m on a project and I need to find someone in SAP who knows a niche topic, I’ll often start by looking at who’s done relevant missions or submitted ideas in that space.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That third one is interesting, I want to come back to it. When did you last open the platform?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "This morning, actually. I have a client meeting on Wednesday about contract lifecycle management, and I wanted to see if anyone had done a challenge or an idea project on CLM recently. So I went on, did some searches — — found two things, neither of them what I was actually looking for, gave up, and went and asked a colleague in Walldorf instead. Standard.",
+          "stage_directions": [
+            "slight frustration"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Standard?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Standard. That’s the pattern. Search, get nothing useful, fall back to the network.",
+          "stage_directions": [
+            "laughs"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 1 — Discovery & Navigation",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Okay let’s stay there. What did you actually search for?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I searched “contract lifecycle,” “CLM,” “contract management,” “contract intelligence” — I tried four or five variants. And here’s the thing — — the search is basically useless for anything nuanced. If I don’t know the exact title of a mission or the exact phrasing the challenge owner used, it just doesn’t find it. It’s a literal string match dressed up as search. I’m sure technically it’s slightly more than that but it behaves like a string match. Degreed solved this years ago with semantic search. Cornerstone has it. 360Learning has it. I don’t understand why we haven’t. It’s not a hard problem in 2026.",
+          "stage_directions": [
+            "leans in",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "When you say Degreed solved it — say more. What does that look like in practice?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay so on Degreed if I type “contract risk” into search, it doesn’t just look for the word “contract risk” in titles. It understands that I might mean clause analysis, compliance review, vendor risk scoring, GDPR exposure, whatever. It returns adjacent concepts ranked by relevance. So I find things I didn’t know how to ask for. And the way I’d build that is — you take the entire content corpus of the platform, you embed it, you do vector search at query time, you rank by cosine similarity, you boost based on recency and user role. It’s honestly a weekend for one engineer who knows what they’re doing. I don’t know why we’re still on lexical search.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me push on something. You said you went looking for CLM stuff this morning, didn’t find it, asked a colleague. What’s the cost of that to you? Like, why does it matter that the search didn’t work?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Hmm. Good question. Okay so — the cost is two things. One: time. If I had found what I needed on the platform, I’d have saved a half-hour of pinging colleagues and waiting for replies. Not huge but it adds up. Two — and this is the bigger one — I don’t actually know what I’m missing. Like, maybe there’s a great mission on CLM that I will never find because it’s titled something weird. So my client meeting on Wednesday is now informed by what I happened to remember from past work plus what one colleague in Walldorf told me on Slack. Instead of being informed by everything SAP collectively knows about CLM. That gap is — that’s the actual cost. It’s not the half hour, it’s the missing knowledge that I’ll never know I missed.",
+          "stage_directions": [
+            "pauses, slightly thrown by the question"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really useful distinction. Okay, when you do find your way onto the homepage, what do you notice first?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Honestly I don’t use the homepage much. I bookmark specific challenges I’m running or watching, I bookmark a couple of mission tracks I’m working through, I go direct. The homepage is — it’s fine, it shows me active challenges and recommended missions, but the recommendations are not personalised enough to be useful. And this is another place we’re behind. LinkedIn Learning now tells you which skills are trending in your role — like, “people in your function are completing these courses, these skills are growing 40% year over year, here’s where you should invest your learning time.” We should be doing something like that. Surfacing missions that are becoming relevant before you even think to look for them. Right now it’s reactive — you go look, you find. It should be proactive — it tells you what to look at because it knows what your role needs.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What would have to be true for that recommendation to feel useful to you instead of intrusive?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Two things. One, it needs to actually understand my role — not just my job title but what I actually do. A consultant in Milan running S/4HANA projects has different needs from a consultant in Walldorf doing the same thing on paper. So role plus context plus what I’ve actually been doing on the platform. Two — and this is non-negotiable — it has to be honest about why it’s recommending something. Not “because you’ll like it.” I want “because three of your peers in similar roles completed it last month” or “because the skill it teaches is trending up 30% in transformation consulting.” Give me the reason. Then I can decide if the reason is good. Same principle as a good doctor explaining their diagnosis — show your work.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 2 — Challenge Participation & Idea Projects",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Okay let’s spend some time on challenges. You’ve been a Challenge Owner six times — talk me through what that experience is actually like.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Oh, where do I start. Okay so let me give you the most recent one. Last quarter I ran a challenge on AI-assisted requirements gathering — basically, can we use AI to help consultants turn messy client interviews into structured business requirements. It’s a real problem for me and my team, we lose days to it every project. I posted the challenge, wrote what I thought was a reasonable brief, gave it a four-week submission window. Got 18 submissions. Of those 18, I’d say maybe four were genuinely on-target. The rest were either too generic — like, “use ChatGPT to summarise things” — or completely off-topic, people who clearly hadn’t read the brief carefully and were just pattern-matching on the word “AI.”",
+          "stage_directions": [
+            "laughs",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "So 14 out of 18 missed the mark. What do you think drove that?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "My brief. My brief was the problem. Half the bad submissions I got are because my brief was too vague. I know that now. But here’s the thing — I had nothing to help me tighten the brief before I published. I wrote it, I read it, I asked one colleague to read it, she said “looks fine,” I published it. There’s no — — there’s no editorial layer. There’s no “your brief is missing X, Y, Z, here’s what good briefs in similar topic areas tend to specify.” Just published it and hoped.",
+          "stage_directions": [
+            "immediate",
+            "searches for the word"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What would help?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I’d love an AI that helps me write the challenge brief. Honestly. Not write it for me — help me write it. Like, I draft my brief, the AI reads it and says “this section is vague, here’s what successful challenge briefs typically include here” or “consider adding a non-goal so people don’t go off-topic” or “your evaluation criteria don’t map cleanly to the problem statement.” That’s a co-author, not a generator. And then — and the way I’d build that is — you train it on the corpus of past challenges, you tag which ones got good submission quality versus low quality, and you fine-tune on that signal. The platform already has the data. We just aren’t using it.",
+          "stage_directions": [
+            "more animated"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Okay let me pull on a different thread. You said 18 submissions came in. How did you actually evaluate them?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Painfully. So the platform gives you a list view of all submissions, you click into each one, you read the writeup, you check the prototype if there is one, you score them. Eighteen submissions at maybe 15–20 minutes each — that’s five, six hours of work. Spread across two evenings because I have a day job. And it’s harder than it sounds because by the time I’m on submission number twelve I’m tired, my standards have drifted, I’m being less generous than I was on submission three. It’s genuinely hard to be fair across that many.",
+          "stage_directions": [
+            "slight pause, then candidly",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What would help with that?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay this is where I’ll say something Priya — sorry, I don’t know if you’ve talked to others, but I imagine some participants will say they’re uncomfortable with AI in evaluation. I’m more pragmatic than that. AI shouldn’t pick the winner. Full stop. But AI absolutely should be helping me triage. Like — “these five submissions appear to address the core problem, these eight are tangentially related, these five seem off-topic, here’s why I think so.” Just to structure my read. I still read all of them, I still score them, but the AI helps me sequence and focus. And — this is important — it shows its reasoning, so I can disagree with it and override it. The participant fear of AI evaluation is real, I get it, but the failure mode they’re afraid of — being filtered out by a black box — that’s a design choice. You can build evaluation assistance that doesn’t filter. It just informs.",
+          "stage_directions": [
+            "pause",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s an interesting distinction. Triage versus filtering.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Right. And honestly — if the alternative is challenge owners being too tired by submission 12 to evaluate fairly, which is the actual current state, then the “human-only” version is *also* bad. It’s just bad in a less visible way. The status quo isn’t neutral.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Strong point. Let me ask about something you mentioned at the start — the “recommended experts” idea. Walk me through that.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yeah so this is the one that drives me most crazy. When I post a challenge, I have no idea who’s even seen it. None. I can see total view count but I can’t see — like — “these are the people across SAP who would be most relevant to this challenge based on their platform activity, their skills, their past idea projects.” I want a recommended experts panel. Seven people, ranked by relevance, with a one-click “send them a notification about this challenge.” Right now what I do instead is — I go on LinkedIn, I search for SAP employees with relevant titles, I message them on Teams, I tell them about my challenge. Which is — that’s ridiculous, right? I’m using LinkedIn to do internal recruiting because the platform that has all the relevant data doesn’t expose it.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me ask what’s driving that for you. Why do you care so much about getting specific people to see the challenge?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Because submission quality is everything. If 18 random people see my challenge, I get 14 off-target submissions. If the seven most relevant experts in SAP see my challenge, I might only get four submissions but all four are excellent. I’d rather have four great submissions than fourteen mediocre ones. The platform is currently optimised for breadth — get as many eyes as possible — when what I actually want is precision. Reach the right people.",
+          "stage_directions": [
+            "pauses, this lands",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "And what stops you from just doing that yourself, manually, like you described?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Time, mostly. And accuracy. When I do it manually through LinkedIn and Teams, I’m using my limited view of who’s relevant. The platform has a much better view than I do — it knows who completed missions in this space, who submitted ideas in this space, who commented on related challenges. It could give me a much better expert list than I can build for myself. I’m doing a worse version of a job the platform should be doing for me.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a clean way to put it. Okay, the structured moments along the way — Info Session, Boost Week, Pitch Rehearsal. What works, what doesn’t?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Info Session — useful when the topic is unfamiliar, redundant when it’s not. Boost Week — for me, mixed. The consulting time is great if you use it. Most teams don’t. Pitch Rehearsals — I’m going to disagree with the obvious answer here. I actually like them. I think feedback on delivery matters because L1s have eight minutes of attention and you need to land cleanly. But — and this is the gap — there’s no equivalent session for stress-testing the idea itself. So you get great delivery on a half-baked idea. The challenge owner should get a session where they help the team adversarially test the substance, not just the presentation. Maybe with the original challenge sponsor in the room.",
+          "stage_directions": [
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 3 — Knowledge Sharing & Community",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me shift to missions and the broader knowledge layer. You’ve done 140-plus missions — what makes a good one versus a bad one for you?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "A good mission teaches me something I can actually use within a week. Concrete, applied, runnable. A bad mission is — and there are a lot of these — a bad mission is twenty minutes of someone’s slide deck reformatted into a mission with a quiz at the end. The quality variance is huge. And the worst part is, there’s no signal upfront. Ratings exist but they’re sparse, and they’re absolute — they don’t tell me whether other consultants like me found it useful, only whether the average user did. I’d want — same as I said earlier — peer signal. Did other Senior Digital Transformation Consultants in Southern Europe find this useful? That’s the signal I need.",
+          "stage_directions": [
+            "immediate",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "When you finish a mission, what happens to what you learned?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Honestly — sometimes nothing. Sometimes I’ll use it on the next project. Sometimes I’ll forget it within two weeks and have to re-learn it from Stack Overflow. That’s actually a real problem. The platform treats missions as completion events. They should be — okay this is going to sound like another Degreed reference but it’s the right one — they should be searchable knowledge fragments. I should be able to search “what did I learn about Fiori accessibility?” and get back the specific tip I picked up from mission 87 three months ago. Right now I can’t. I have to re-do the mission, scroll through, find the tip. Nobody has time for that. So we don’t.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What about people-finding? When you said earlier you use the platform as an expertise discovery layer — how does that actually work?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Loosely. Like — I’ll find a challenge from 18 months ago on a topic close to what I’m working on now, I’ll see who submitted strong ideas, I’ll go to their profile, I’ll Teams-message them. It works but it’s ad hoc and I’m the only person I know who does it. Most people don’t think of the platform as an expertise layer. It is one, accidentally, but it’s not designed to be one. And this is — okay, this is the bigger strategic point. The platform’s current frame is “a place to do learning and innovation activities.” The more interesting frame is “a graph of people, problems, solutions, and skills across SAP.” The activities are how the graph gets populated. The graph is what’s actually valuable. We’re sitting on a graph and treating it like a to-do list.",
+          "stage_directions": [
+            "laughs",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a strong reframe. Say more.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Look — every mission completion is a node. Every challenge submission is a node. Every comment is an edge. Every co-team-membership on a challenge is an edge. Every shared topic interest is a weak tie. SAP has 35,000 employees. The Experience Garage is, among other things, a massive distributed signal-collection layer about who knows what and who collaborates with whom. And we expose almost none of that back to the people who could use it — challenge owners trying to find experts, learners trying to find mentors, sponsors trying to find teams that have credibly worked on adjacent problems. That graph is the strategic asset. Recommendations, search, expert discovery, post-win continuity — they’re all the same problem viewed from different angles. They’re all “query the graph well.”",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "And what’s stopping that from happening, do you think?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Honestly? Probably a combination of things. Engineering capacity. Probably some privacy and GDPR questions that need to be answered carefully — and they’re real questions, I’m not dismissing them. But mostly I think it’s framing. The team that runs the platform thinks of it as a content platform. The thing it actually is, is a relationship platform that happens to have content on it. Different framing leads to different roadmap.",
+          "stage_directions": []
+        }
+      ]
+    },
+    {
+      "name": "Block 4 — AI/ML Expectations",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Okay let’s zoom in on AI specifically. Outside the Experience Garage, where is AI actually showing up in your work?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Joule for SAP-specific stuff. Lots. I use it constantly during S/4HANA implementations to look up configuration details I’d otherwise have to dig for. ChatGPT and Claude for general drafting — client emails, project plans, the boilerplate around real work. Copilot in Office. And then more interesting stuff — I’ve been experimenting with using LLMs to do first-pass analysis of client interview transcripts, which is the same problem I posted as a challenge actually. I’m my own customer there.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What’s been hype?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Most “AI agent” demos. The gap between what gets demoed and what actually works in production is huge. I’ve sat in vendor pitches where the “agent” was running on a curated dataset that has nothing to do with real client data, and the moment you try it on real data it breaks. I’m also sceptical of anything pitched as “AI will replace X workflow.” That’s usually not the right unit. AI replaces *steps* within workflows, not workflows. Pitches that say workflow are usually marketing. Pitches that say specific steps are usually engineering. I trust the second kind.",
+          "stage_directions": [
+            "immediate",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Okay imagine Experience Garage in two years, AI is woven in well. What’s different?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Let me give you a stack. From bottom to top. One — semantic search, like I said. Everything is queryable in natural language, results are ranked by relevance to your role and recent activity. Two — proactive surfacing. The platform tells me “here are three missions trending in your peer group” and “here’s a challenge that just launched in an area you submitted an idea about last year” without me asking. Three — challenge brief co-authoring. I draft, AI critiques, I iterate, brief gets stronger before publication. Four — recommended experts panel for challenge owners, like I described. Five — submission triage assistance, transparent and overrideable. Six — and this is the one nobody talks about — automated post-challenge knowledge synthesis. When a challenge closes, the AI writes a summary of what was learned across all submissions, what the winning ideas had in common, what gaps remained. That summary becomes a new artefact in the platform, searchable, that feeds future related challenges. Seven — idea lifecycle tracking. Every submitted idea has a trail. AI watches sponsor org changes, related Jira tickets, mentions in product backlogs, and updates the trail. That’s the stack. None of these are individually exotic. The hard part is doing them together coherently.",
+          "stage_directions": [
+            "animated",
+            "pause",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me pull on number six. That one’s less obvious than the others. What’s driving that for you?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Because right now, when a challenge closes, the value is captured by — what, three people? The challenge owner, the sponsor, and the team that won. Everyone else who submitted, everyone who didn’t submit but read the brief, everyone in adjacent topic areas — they get nothing. The collective learning of 18 submissions disappears into an archive. That’s a massive failure of knowledge capture. If you ran the same challenge 18 months later in a different region, you’d start from scratch. The synthesis layer is what makes the platform get smarter over time instead of just collecting more stuff.",
+          "stage_directions": [
+            "thinks for a moment",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s really good. Anywhere you’d be uncomfortable with AI being involved?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I said earlier — AI shouldn’t pick winners. I still believe that. I’d also be uncomfortable with AI doing personalisation that I can’t turn off. Like, I want to be able to say “show me everything, not just stuff you think I’ll like.” The recommendation engine should be opt-in by default for proactive surfacing, and there should always be a “show me everything, unfiltered” mode. Filter bubbles inside an internal innovation platform would be — that would be a really bad outcome. And honestly — and this is going to sound paranoid but it’s real — I’d want clear data governance. What is the platform doing with my activity data? Who can see it? Can my manager see what missions I’ve completed? Can it be used for performance reviews? Those questions need clean answers. Otherwise people start gaming their platform behaviour and the signal degrades.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 5 — Platform Friction & Workarounds",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Magic wand — fix one thing tomorrow.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Semantic search across everything — content and people. One feature. Unlocks five others. If I had a second wand — the brief co-authoring tool. Quality of inputs determines quality of outputs and right now we put zero effort into improving inputs.",
+          "stage_directions": [
+            "immediate",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What do you do outside the platform that probably should happen inside it?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Almost everything around the formal moments. I do my prep in Notion, I run my challenge coordination in Teams, I do my submission scoring in Excel because the platform’s scoring UI is honestly worse than a spreadsheet. The platform is good at being a place where things are *posted*. It’s not as good at being a place where things are *worked on*. Same insight a Solver would give you, just from the owner’s side.",
+          "stage_directions": [
+            "laughs",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Anything you’ve learned to just live with?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. The notification system. I’ve turned almost everything off because it was noise. Which means I now miss things I’d actually want to know about. So I’ve traded one bad outcome for another. There’s no calm middle setting. And the comment threads on challenges — nobody uses them. People comment on MS Teams instead. The on-platform discussion features are essentially dead. I don’t fight that anymore, I just operate the way everyone else does. But it’s a sign that the platform has lost a feature without admitting it.",
+          "stage_directions": [
+            "small laugh",
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Closing",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Two final questions. If you were on the Experience Garage product team for a week, what’s the first thing you’d dig into?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "The graph. I’d spend a week understanding what data the platform actually has, how the entities — users, missions, challenges, idea projects, comments, completions — relate to each other, and where the gaps are. Because every feature I’ve talked about today is downstream of that. You can’t do semantic discovery, expert recommendations, lifecycle tracking, or knowledge synthesis without a coherent underlying graph. I’d start there. Honestly I’d be surprised if the team hasn’t done some version of this already — but if they have, the outputs aren’t visible to power users like me, and that itself is a problem.",
+          "stage_directions": [
+            "no hesitation"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Anyone else we should be talking to?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Definitely an instance admin — they see operational pain that I don’t. Definitely someone in a non-English-speaking region who’s lower on the engagement curve than I am, because I’m a heavy power user and my view is biased. And — actually, this is a useful one — someone who *stopped* using the platform. Not a current user. Someone who tried it, didn’t stick. That’s where you’d learn the most about the activation funnel. Hardest to recruit but most informative.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really good suggestion. Anything I didn’t ask that you wish I had?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Maybe — how the platform fits with the rest of SAP’s internal tooling. Because right now it’s an island. It doesn’t talk to Jira, doesn’t talk to the product backlog, doesn’t talk to HR systems where role and skills data live, doesn’t really talk to Joule. If it were properly integrated, half the AI features I described would be much easier to build because the data is already somewhere — it’s just somewhere else. The Experience Garage as a standalone product is fine. The Experience Garage as the social and innovation layer across SAP’s internal tooling stack — that’s a much bigger and more interesting thing. But it requires integration work that nobody’s scoping right now, as far as I can see.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Marcus, this has been incredibly useful. Thank you.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I told you I had opinions. Send me what you find. Genuinely curious where this lands.",
+          "stage_directions": [
+            "grins"
+          ]
+        }
+      ]
+    }
+  ],
+  "end_of_transcript": "End of transcript — 32:41"
+}

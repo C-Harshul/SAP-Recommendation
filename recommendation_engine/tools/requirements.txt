@@ -1,0 +1,7 @@
+# recommendation_engine/tools/requirements.txt
+# Dependencies for the interview conversion tooling.
+# Kept separate from the main recommendation_engine requirements
+# so the GitHub Actions runner only installs what it needs.
+
+python-docx==1.1.2
+boto3==1.34.69
