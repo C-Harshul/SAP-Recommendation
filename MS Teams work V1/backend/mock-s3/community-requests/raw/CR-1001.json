@@ -1,0 +1,23 @@
+{
+  "request_id": "CR-1001",
+  "submitted_at": "2026-05-30T19:13:47.593Z",
+  "submitted_by": "synthetic_user_001",
+  "department": "SAP Customer Experience & Success Enablement",
+  "role": "product manager",
+  "source": "Teams Bot",
+  "entry_point": "personal_bot",
+  "raw_request": "It would be nice if lessons were available in podcast format",
+  "cleaned_request": "Add podcast/audio mode for learning content",
+  "problem": "Users want to consume learning material while commuting",
+  "desired_outcome": "More flexible learning experience",
+  "feature_category": "Learning Experience",
+  "capability_area": "Content Delivery",
+  "urgency": "Important",
+  "frequency": "Weekly",
+  "affected_workflow": "Experience Garage mission learning",
+  "interview_opt_in": true,
+  "preferred_follow_up_method": "Teams",
+  "interview_context": "Happy to discuss audio-first learning use cases",
+  "similar_request_count": 0,
+  "status": "new"
+}

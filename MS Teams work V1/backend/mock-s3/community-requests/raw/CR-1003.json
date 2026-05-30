@@ -1,0 +1,23 @@
+{
+  "request_id": "CR-1003",
+  "submitted_at": "2026-05-30T19:21:51.506Z",
+  "submitted_by": "synthetic_user_001",
+  "department": "SAP Customer Experience & Success Enablement",
+  "role": "business user",
+  "source": "Teams Bot",
+  "entry_point": "personal_bot",
+  "raw_request": "It would be nice if I can cosnume the lessons in podcast format",
+  "cleaned_request": "Add podcast/audio mode for learning content",
+  "problem": "",
+  "desired_outcome": "",
+  "feature_category": "",
+  "capability_area": "",
+  "urgency": "Critical blocker",
+  "frequency": "Daily",
+  "affected_workflow": "Other",
+  "interview_opt_in": true,
+  "preferred_follow_up_method": "Teams",
+  "interview_context": "",
+  "similar_request_count": 0,
+  "status": "new"
+}

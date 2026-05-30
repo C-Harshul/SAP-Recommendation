@@ -1,0 +1,23 @@
+{
+  "request_id": "CR-1004",
+  "submitted_at": "2026-05-30T19:23:48.324Z",
+  "submitted_by": "synthetic_user_001",
+  "department": "SAP Customer Experience & Success Enablement",
+  "role": "business user",
+  "source": "Teams Bot",
+  "entry_point": "business_unit_chat",
+  "raw_request": "The ML Workbench is useful, but I wish there was a guided no-code path for business users.",
+  "cleaned_request": "Introduce a no-code guided workflow in ML Workbench for non-technical users",
+  "problem": "Business users feel excluded from ML Workbench due to its technical complexity",
+  "desired_outcome": "Ability for non-technical stakeholders to build and run simple ML experiments",
+  "feature_category": "ML Tooling",
+  "capability_area": "ML Workbench",
+  "urgency": "Important",
+  "frequency": "Daily",
+  "affected_workflow": "ML Workbench",
+  "interview_opt_in": false,
+  "preferred_follow_up_method": "No preference",
+  "interview_context": "",
+  "similar_request_count": 0,
+  "status": "new"
+}
