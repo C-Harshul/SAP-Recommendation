@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --teams-purple:       #6264a7;
+  --teams-purple-dark:  #464775;
+  --teams-purple-light: #e8e8f4;
+  --teams-sidebar-bg:   #292929;
+  --teams-nav-bg:       #1f1f1f;
+  --teams-chat-bg:      #f5f5f5;
+  --teams-white:        #ffffff;
+  --teams-border:       #e0e0e0;
+  --teams-text-primary: #1f1f1f;
+  --teams-text-muted:   #616161;
+  --teams-bubble-bot:   #ffffff;
+  --teams-bubble-user:  #e8e8f4;
+  --teams-active:       #464775;
+  --teams-hover:        #3b3b3b;
+  --sap-gold:           #f0ab00;
+  --success-green:      #107c10;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--teams-chat-bg);
+  color: var(--teams-text-primary);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c0c0c0; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }

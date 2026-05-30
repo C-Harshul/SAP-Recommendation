@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "community-request.schema.json",
+  "title": "Community Request",
+  "description": "Schema for an SAP Experience Garage community feature request captured via Teams Bot or Business Unit chat",
+  "type": "object",
+  "required": [
+    "request_id",
+    "submitted_at",
+    "submitted_by",
+    "department",
+    "source",
+    "entry_point",
+    "raw_request",
+    "status"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "pattern": "^CR-\\d+$",
+      "description": "Unique identifier in the format CR-1001, CR-1002, etc."
+    },
+    "submitted_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of submission"
+    },
+    "submitted_by": {
+      "type": "string",
+      "description": "User identifier; synthetic_user_001 in demo, real AAD UPN in production"
+    },
+    "department": {
+      "type": "string",
+      "description": "SAP business unit or department of the submitter"
+    },
+    "role": {
+      "type": "string",
+      "enum": ["data analyst", "product manager", "developer", "business user", "learner", "other"],
+      "description": "Job role of the submitter"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["Teams Bot", "Web Form", "Email"],
+      "description": "Channel through which the request was submitted"
+    },
+    "entry_point": {
+      "type": "string",
+      "enum": ["personal_bot", "business_unit_chat"],
+      "description": "Specific entry point within the Teams surface"
+    },
+    "raw_request": {
+      "type": "string",
+      "description": "Verbatim text of the original request as typed by the user"
+    },
+    "cleaned_request": {
+      "type": "string",
+      "description": "Bot-normalized, concise version of the request"
+    },
+    "problem": {
+      "type": "string",
+      "description": "The pain point or underlying problem the user described"
+    },
+    "desired_outcome": {
+      "type": "string",
+      "description": "What the user hopes to achieve if this request is fulfilled"
+    },
+    "feature_category": {
+      "type": "string",
+      "description": "High-level category for the requested feature (e.g. Learning Experience, ML Tooling)"
+    },
+    "capability_area": {
+      "type": "string",
+      "description": "Specific capability area within the Experience Garage platform"
+    },
+    "urgency": {
+      "type": "string",
+      "enum": ["Nice to have", "Important", "Critical blocker"],
+      "description": "How urgently the submitter needs this feature"
+    },
+    "frequency": {
+      "type": "string",
+      "enum": ["One-time", "Monthly", "Weekly", "Daily"],
+      "description": "How often the submitter encounters this pain point"
+    },
+    "affected_workflow": {
+      "type": "string",
+      "enum": [
+        "Experience Garage mission learning",
+        "ML Workbench",
+        "Data Challenges",
+        "AI Prototyping Lab",
+        "Platform Navigation",
+        "Content Delivery",
+        "Collaboration",
+        "Other"
+      ],
+      "description": "Which Experience Garage workflow is affected"
+    },
+    "interview_opt_in": {
+      "type": "boolean",
+      "description": "Whether the user agreed to a follow-up interview"
+    },
+    "preferred_follow_up_method": {
+      "type": "string",
+      "enum": ["Teams", "Email", "No preference"],
+      "description": "How the user prefers to be contacted for follow-up"
+    },
+    "interview_context": {
+      "type": "string",
+      "description": "Any extra context the user provided about their availability or use case"
+    },
+    "similar_request_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of similar requests in the dataset; populated by the recommendation engine"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["new", "reviewed", "in_progress", "shipped", "declined"],
+      "description": "Current processing status of the request"
+    }
+  },
+  "additionalProperties": false
+}

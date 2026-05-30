@@ -1,0 +1,23 @@
+{
+  "request_id": "CR-1002",
+  "submitted_at": "2026-05-30T19:16:59.078Z",
+  "submitted_by": "synthetic_user_001",
+  "department": "SAP Customer Experience & Success Enablement",
+  "role": "business user",
+  "source": "Teams Bot",
+  "entry_point": "personal_bot",
+  "raw_request": "It would be nice if lessons were available in podcast format\"",
+  "cleaned_request": "Add podcast/audio mode for learning content",
+  "problem": "",
+  "desired_outcome": "",
+  "feature_category": "",
+  "capability_area": "",
+  "urgency": "Important",
+  "frequency": "Daily",
+  "affected_workflow": "Experience Garage mission learning",
+  "interview_opt_in": false,
+  "preferred_follow_up_method": "No preference",
+  "interview_context": "",
+  "similar_request_count": 0,
+  "status": "new"
+}
