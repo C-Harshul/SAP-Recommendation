@@ -1,0 +1,198 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "metadata": {
+    "_note": "REAL TEAMS INTEGRATION: Submit this JSON payload as the 'card' property inside a Bot Framework Activity of type 'message' with the attachment contentType 'application/vnd.microsoft.card.adaptive'. The data object in Action.Submit will be POSTed to your bot endpoint and then forwarded to POST /community-requests."
+  },
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Experience Garage Feature Request",
+      "size": "Large",
+      "weight": "Bolder",
+      "color": "Accent"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Help us improve the Experience Garage by sharing your feature idea.",
+      "wrap": true,
+      "isSubtle": true
+    },
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Your Request",
+          "weight": "Bolder",
+          "size": "Medium"
+        },
+        {
+          "type": "Input.Text",
+          "id": "raw_request",
+          "label": "Raw Request",
+          "placeholder": "Describe your feature idea in your own words…",
+          "isMultiline": true,
+          "isRequired": true
+        },
+        {
+          "type": "Input.Text",
+          "id": "cleaned_request",
+          "label": "Cleaned Request (bot-generated)",
+          "placeholder": "Short, normalized version of the request",
+          "isMultiline": false
+        },
+        {
+          "type": "Input.Text",
+          "id": "problem",
+          "label": "Problem / Pain Point",
+          "placeholder": "What challenge are you facing?",
+          "isMultiline": true
+        },
+        {
+          "type": "Input.Text",
+          "id": "desired_outcome",
+          "label": "Desired Outcome",
+          "placeholder": "What would success look like?",
+          "isMultiline": true
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "style": "default",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Classification",
+          "weight": "Bolder",
+          "size": "Medium"
+        },
+        {
+          "type": "Input.Text",
+          "id": "feature_category",
+          "label": "Feature Category",
+          "placeholder": "e.g. Learning Experience, ML Tooling, Analytics"
+        },
+        {
+          "type": "Input.Text",
+          "id": "capability_area",
+          "label": "Capability Area",
+          "placeholder": "e.g. Content Delivery, Collaboration"
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "affected_workflow",
+          "label": "Affected Workflow",
+          "style": "compact",
+          "isRequired": true,
+          "choices": [
+            { "title": "Experience Garage mission learning", "value": "Experience Garage mission learning" },
+            { "title": "ML Workbench", "value": "ML Workbench" },
+            { "title": "Data Challenges", "value": "Data Challenges" },
+            { "title": "AI Prototyping Lab", "value": "AI Prototyping Lab" },
+            { "title": "Platform Navigation", "value": "Platform Navigation" },
+            { "title": "Content Delivery", "value": "Content Delivery" },
+            { "title": "Collaboration", "value": "Collaboration" },
+            { "title": "Other", "value": "Other" }
+          ]
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "role",
+          "label": "Your Role",
+          "style": "compact",
+          "choices": [
+            { "title": "Data Analyst", "value": "data analyst" },
+            { "title": "Product Manager", "value": "product manager" },
+            { "title": "Developer", "value": "developer" },
+            { "title": "Business User", "value": "business user" },
+            { "title": "Learner", "value": "learner" },
+            { "title": "Other", "value": "other" }
+          ]
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "urgency",
+          "label": "Urgency",
+          "style": "compact",
+          "choices": [
+            { "title": "Nice to have", "value": "Nice to have" },
+            { "title": "Important", "value": "Important" },
+            { "title": "Critical blocker", "value": "Critical blocker" }
+          ]
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "frequency",
+          "label": "How often do you encounter this?",
+          "style": "compact",
+          "choices": [
+            { "title": "One-time", "value": "One-time" },
+            { "title": "Monthly", "value": "Monthly" },
+            { "title": "Weekly", "value": "Weekly" },
+            { "title": "Daily", "value": "Daily" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Follow-Up",
+          "weight": "Bolder",
+          "size": "Medium"
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "interview_opt_in",
+          "label": "Would you be open to a 10–15 minute follow-up chat with the Experience Garage product team?",
+          "style": "expanded",
+          "choices": [
+            { "title": "Yes", "value": "Yes" },
+            { "title": "Maybe", "value": "Maybe" },
+            { "title": "No", "value": "No" }
+          ]
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "preferred_follow_up_method",
+          "label": "Preferred follow-up method",
+          "style": "compact",
+          "choices": [
+            { "title": "Teams", "value": "Teams" },
+            { "title": "Email", "value": "Email" },
+            { "title": "No preference", "value": "No preference" }
+          ]
+        },
+        {
+          "type": "Input.Text",
+          "id": "interview_context",
+          "label": "Additional Interview Context",
+          "placeholder": "Anything else you'd like us to know before we reach out?",
+          "isMultiline": true
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit to Experience Garage",
+      "style": "positive",
+      "data": {
+        "entry_point": "personal_bot"
+      }
+    },
+    {
+      "type": "Action.Execute",
+      "title": "Cancel",
+      "style": "destructive"
+    }
+  ]
+}

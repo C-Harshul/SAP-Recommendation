@@ -1,0 +1,4 @@
+node_modules/
+.DS_Store
+*.log
+backend/mock-s3/community-requests/.counter
