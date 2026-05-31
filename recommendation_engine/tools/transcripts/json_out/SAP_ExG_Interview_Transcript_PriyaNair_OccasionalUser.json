@@ -1,0 +1,682 @@
+{
+  "interview_id": "SAP_ExG_Interview_Transcript_PriyaNair_OccasionalUser_20260530",
+  "source_file": "SAP_ExG_Interview_Transcript_PriyaNair_OccasionalUser.docx",
+  "title": "Synthetic User Interview — Transcript",
+  "project": "SAP Experience Garage — AI Platform Innovation (Project B, Team 11)",
+  "synthetic_research_note": "This transcript is a synthetic role-play, generated as part of Stage 3 of the team’s user-research workstream. No real SAP employee was interviewed. The participant (“Priya Nair”) is a fictional composite persona — the Frustrated Occasional User archetype, on the path to platform churn — anchored to publicly observable patterns in SAP’s HR and APAC workforce. (Distinct from the Side-Project Solver persona, also named Priya, in a separate transcript; disambiguated by surname.) Stage directions appear in italics. The transcript should be treated as a hypothesis-generation artefact, not as validated user research.",
+  "metadata": {
+    "date": "[redacted]",
+    "duration": "29 min 47 sec",
+    "format": "MS Teams video, recording with consent",
+    "moderator": "Project B research team",
+    "participant": {
+      "name": "Priya Nair",
+      "role": "HR Business Partner, Talent Development, SAP APAC",
+      "persona_type": "Frustrated Occasional User (18 missions, ~biweekly login cadence, declining engagement)"
+    }
+  },
+  "stats": {
+    "block_count": 7,
+    "total_turns": 85,
+    "moderator_turns": 43,
+    "participant_turns": 42
+  },
+  "blocks": [
+    {
+      "name": "Warm-up",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Hi Priya, thanks so much for making the time. Just to quickly set expectations — this is going to be pretty conversational. I have some topics I want to cover but mostly I’m just curious about your experience. There are no wrong answers, and honestly the more candid you can be, including about things that haven’t worked well, the more useful this is for us. Sound okay?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay, yes. I’ll try. I’m not always great at saying when things aren’t working, but I’ll try.",
+          "stage_directions": [
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s really helpful that you’re flagging that. I’ll probably push a bit when you start to hedge — not to make you uncomfortable, just because the things you’re hedging about are usually the most useful for us to hear. Is that okay?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. Yes, that’s fair. Okay. Push away.",
+          "stage_directions": [
+            "slight pause",
+            "small smile"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Great. So just to start — could you tell me a little about your day-to-day, and where the Experience Garage fits into that?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Sure. So I’m — my name is Priya, Priya Nair — I’m an HR Business Partner based in Singapore, I cover Talent Development for the APAC region. So my day-to-day is — a lot of conversations. With managers, with employees, with my own team. Career planning sessions, performance review cycles, that kind of work. I joined SAP about two and a half years ago, and the Experience Garage I joined about — I think fourteen months ago? My manager actually encouraged me at an off-site. The Garage team came and did a demo and I thought it looked great, so I signed up.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "And how has that gone?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Honestly? Less well than I hoped. I was — I was really enthusiastic at first. I did maybe — I don’t know — five or six missions in the first month? And then it just sort of… tapered off. Now I log in maybe every two, three weeks. Sometimes longer. I don’t know if that’s just because I’m busy or because there’s something about how I’m using it. I don’t know if this is just me but it kind of stopped feeling — relevant? I’m not sure that’s the right word.",
+          "stage_directions": [
+            "longer pause",
+            "slight apologetic tone"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Don’t worry about the right word — let’s just stay with that for a second. When you last logged in, what was that like? Can you walk me through it?",
+          "stage_directions": []
+        }
+      ]
+    },
+    {
+      "name": "Block 1 — Discovery & Navigation",
+      "turns": [
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay. So I logged in about — I think it was two weeks ago, maybe a bit more. It was on a Thursday afternoon, I had a quiet hour between meetings. I opened the platform and — — okay so this is the thing. The home screen looked exactly like it did the last time I’d logged in. Same recommended missions, I think. Same active challenges. There was no — ** — there was nothing that said “welcome back, here’s what’s new since you’ve been gone” or “you started this mission, pick up where you left off.” It just looked like the same page.",
+          "stage_directions": [
+            "thinks",
+            "pause",
+            "searches for the word"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "And how did that feel?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Disorienting? Like I had to remember what I’d been doing before, and I couldn’t. So I sort of — I scrolled, I looked at a few things, and then I clicked on a mission that looked interesting and started it. But it wasn’t something I’d planned to do. It was — kind of arbitrary. I just picked something to feel like I’d done something.",
+          "stage_directions": [
+            "small pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really useful description. Can I push a little — what would it have looked like if the home screen had felt more welcoming when you came back?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I’m not sure. Something that just feels more… personal? Like — — okay, I use Duolingo. I do Spanish on Duolingo. And every time I open that app, even if I’ve been away for a week, it immediately tells me what I was working on, where I am in my streak, what I should do next. I open it and I know exactly what to do for the next two minutes. That’s the only reason I keep opening it, honestly. Because it makes the decision for me. The Experience Garage doesn’t do that. It just shows me everything and expects me to figure out what I should be doing today. And I don’t know.",
+          "stage_directions": [
+            "longer pause",
+            "pause",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really good comparison. So Duolingo makes the next decision easy, and the Experience Garage doesn’t.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Exactly. And the funny thing is — I’m not even doing Spanish for any practical reason, I’m just doing it because the app makes it easy. Whereas the Experience Garage is supposedly relevant to my career, and I still don’t open it because it’s hard to know what to do. That’s — that’s a bit backwards, isn’t it?",
+          "stage_directions": [
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "It really is. Let me ask — when you do log in and look around, how do you decide what’s worth your time? Like, what mission to do, what challenge to look at?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Mostly the title. Mostly I just read titles. Sometimes the short description. If something looks like it might be useful for my role I might click. But I don’t really — I’m not searching for anything specific most of the time. I’m browsing. And browsing isn’t — it’s not how I learn, actually. I learn when I have a specific question. On LinkedIn Learning or Coursera I go because I need to know about something specific. On the Experience Garage I’m just sort of — wandering.",
+          "stage_directions": [
+            "pauses"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Have you ever come in with a specific question?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Once, maybe twice. I was preparing for a performance calibration conversation a few months ago and I wanted to see if there was anything on, you know, having difficult feedback conversations. I searched. I got — — I think I got two missions, both very generic, neither really helpful. So I went to LinkedIn Learning instead and watched a thirty-minute video that was much better. Which I feel a bit bad saying out loud.",
+          "stage_directions": [
+            "thinks",
+            "pause",
+            "quieter"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Please don’t feel bad — that’s exactly the kind of thing I need to hear. So when you needed something specific, the Experience Garage couldn’t serve you, and you went elsewhere.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. And honestly that was the moment I think I sort of — quietly stopped trusting that the platform would have what I needed. Which is unfair maybe, because I tried it twice. But that’s what happened.",
+          "stage_directions": [
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 2 — Challenge Participation & Idea Projects",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me move to challenges. Have you ever participated in a challenge?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "No. I tried to once.",
+          "stage_directions": [
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Tell me about that.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay so this was — I think eight or nine months ago. I’d been hearing about challenges, I knew people on my team had done one, and I thought — okay, I should try this. So I went on, I clicked the Challenges section, and I started browsing. And — — okay this is going to sound silly but I couldn’t tell which ones were still active versus closed. There were a lot of them and some of them I think were old? It wasn’t clear. I’d click on one and read the brief and then realise the submission deadline had been three months ago. Then I’d go back, click another one, same thing. After about ten minutes I gave up.",
+          "stage_directions": [
+            "pause",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Ten minutes of clicking into things and finding out they were closed.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. And — — I don’t know if I was using it wrong. Maybe there was a filter I should have used. But it wasn’t obvious where it was.",
+          "stage_directions": [
+            "small apologetic pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Priya, I’m going to push back on the “maybe I was using it wrong.” You were a user. You opened the page. You couldn’t tell which ones were active. That’s not you using it wrong, that’s the platform not showing you what you needed.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay. Yes. That’s — that’s fair. Yes, I think the platform should have made that clearer.",
+          "stage_directions": [
+            "slight pause, then small smile",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Did you go back and try again later?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "No. I felt — I don’t know — slightly embarrassed? Like, if I couldn’t even figure out which challenges were open, maybe this wasn’t for me. So I just didn’t go back to the challenges section. I’ve only done missions since.",
+          "stage_directions": [
+            "quieter"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really important thing to share. The friction wasn’t just inconvenience — it made you feel like you didn’t belong.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. I think that’s right. I hadn’t — I hadn’t put it that way before but yes. It made me feel like other people knew what they were doing and I didn’t. So I stayed in the part I understood, which was missions.",
+          "stage_directions": [
+            "longer pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Have you ever heard about a challenge through another channel — email, Teams, a colleague — and gone to look at it that way?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I get emails sometimes. They mention challenges. But — — I can’t tell if those emails are addressed to me specifically or sent to everyone. They feel like newsletters. So I read them quickly and don’t usually click through. They’re background noise, honestly. I’d feel differently if it felt like “this challenge is for someone in your role,” but it doesn’t. It feels like a megaphone announcement.",
+          "stage_directions": [
+            "thinks",
+            "slight hesitation"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a sharp observation. The emails feel like broadcasts, not invitations.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. That’s a better way to say it than I said it. Yes — broadcasts not invitations.",
+          "stage_directions": [
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 3 — Knowledge Sharing & Community",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me come back to missions, since that’s where most of your time has been. You’ve done eighteen. What’s a mission you actually finished and enjoyed?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "There was one on coaching conversations that was really good. It was structured well, the examples were realistic — like, the dialogues felt like dialogues I actually have, not fake textbook ones. I finished it in two sittings and I still think about it sometimes when I’m in a coaching conversation. That was a good one.",
+          "stage_directions": [
+            "thinks, brightens slightly"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "And one you didn’t finish?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "A few. There were — okay, two specifically come to mind. One was supposed to be about people analytics but it turned out to be very technical, like, R code, dashboards. I’m not technical. I got about a third of the way through and just — closed the tab. Never came back. And another one was about — I think it was about organisational design? I started it and the first task was just to watch a forty-minute video. That was the whole task. I don’t have forty minutes for one task. So I closed it.",
+          "stage_directions": [
+            "small wince",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What happens to a mission you abandon? Did the platform do anything?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "No, I don’t think so. It’s just sort of — sitting there, incomplete, in my profile. I see it sometimes and feel a bit guilty. Like an unfinished task on my to-do list that I know I’m not going to do but I can’t bring myself to remove.",
+          "stage_directions": [
+            "pauses",
+            "quieter"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Could you tell the platform “this isn’t relevant to me, take it off my list”?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I don’t know how. I don’t think there’s a way. Or if there is I never found it. So they just — accumulate. I have like three abandoned missions in my profile and every time I see them I feel a small wave of guilt. Which is silly. They’re missions. They’re voluntary. But — the platform doesn’t help me move past them either.",
+          "stage_directions": [
+            "thinks",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really specific feeling. Guilt about an abandoned mission. Say more about that, if you can.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I think — okay, I’m someone who finishes things. I don’t leave books half-read, I don’t leave projects half-done. So when the platform shows me a list of abandoned missions, it’s telling me about myself in a way I don’t like. Even though the reason I abandoned them wasn’t my fault — they were poorly suited to me. The platform doesn’t distinguish between “I gave up because I was lazy” and “I gave up because this mission shouldn’t have been recommended to me in the first place.” It just shows me an unfinished task. And the way I read that is — I failed. Which isn’t — it’s not fair but it’s how it feels.",
+          "stage_directions": [
+            "longer pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s really honest, thank you. Let me ask — the points and badges. How do those work for you?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I — okay, I have 340 points. I have no idea if that’s good. I don’t know what good looks like. Is 340 a lot? Is it a little? I don’t know if anyone in my team has more or fewer. I don’t know what 340 unlocks, if anything. Compare that to Duolingo, where my streak number is — like — visceral. I know exactly what it means. If I miss a day I feel terrible. The Experience Garage points are just a number on my profile that means nothing to me.",
+          "stage_directions": [
+            "small laugh, slight embarrassment",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What about the badges?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Same answer, honestly. I have — I think I have four badges. I got one for completing my first mission. I don’t remember the others. They’re sort of — there. They don’t connect to anything I care about. I think gamification works when the thing being measured matters to you. The streak in Duolingo measures consistency, which is what learning a language actually requires, so it lands. Points and badges here measure — activity? I think? But activity isn’t really the thing I’m trying to optimise. I’m trying to learn things. And points don’t tell me whether I learned anything.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a really sharp distinction — measuring activity versus measuring learning.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Thank you. Is that useful feedback?",
+          "stage_directions": [
+            "small smile"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Genuinely yes. Really useful. Let me ask one more thing in this area — when you’ve learned something good from a mission, does it go anywhere? Do you revisit?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "No. The coaching conversations one I mentioned — I think about it but I’ve never gone back and looked at the materials. I couldn’t find them quickly if I tried. They’re inside the mission and the mission is marked complete and I’m not going to re-do it just to find the bit I want. So whatever stuck, stuck in my head. Whatever didn’t, is gone.",
+          "stage_directions": [
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 4 — AI/ML Expectations",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Let me ask about AI more directly. Where is AI showing up in your day-to-day right now?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "A few places. I use ChatGPT to draft sensitive emails sometimes — like, if I have to write to a manager about a difficult performance situation, I might start with ChatGPT to get the structure right and then rewrite it myself. I use Copilot in Office occasionally for summarising long documents. And honestly that’s it. I’m not — I don’t have strong views about AI. It’s a tool. It’s useful when it’s useful.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "If the Experience Garage had AI woven into it well — two years from now — what’s different about your experience? And it’s okay if you don’t have a feature answer, just talk about how it would feel.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Okay. It would feel — personal? Like, when I log in, it knows it’s me, it knows what I’ve been doing, it knows what I care about in my role, and it’s already figured out what I should look at today. I don’t have to decide. It says “welcome back, here’s the one thing I think you should spend ten minutes on,” and I do it, and I leave feeling like I did something useful. Right now logging in feels like walking into a library where someone hands me a catalogue and says “good luck.” I want it to feel like walking into a library where a librarian comes up and says “based on what you read last time, I think you’d like this.”",
+          "stage_directions": [
+            "longer pause",
+            "pause",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s a beautiful image. Catalogue versus librarian.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Thank you. That just came out. I think — that’s probably the whole thing for me. The platform treats me like a stranger every time I come back. I want it to remember me.",
+          "stage_directions": [
+            "small smile",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Anywhere you’d be uncomfortable with AI being involved?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I’m — okay, this is going to be a more HR answer than a tech answer. I’d be uncomfortable if I thought my engagement on the platform was being used to evaluate me at work. Like — if my manager could see that I’d been less active in the last quarter and read that as a signal about my performance. Even if nobody’s actually doing that, the fear of it would change my behaviour. I’d game my activity. And then the data the platform collected would be meaningless. So if AI is going to do more with my activity data — and it sounds like that’s the direction — I’d want to know exactly what’s collected, who can see it, and what it’s used for. Not in a paranoid way. In a — this is my workplace, the stakes are real.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s such an important point. Especially from someone in HR.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Yes. I see what happens when employees feel surveilled, even informally. It changes everything. So the platform needs to be very thoughtful about that — especially if it gets smarter.",
+          "stage_directions": [
+            "slight nod"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block 5 — Platform Friction & Workarounds",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Magic wand — if you could fix one thing about the platform tomorrow, what would it be?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Make logging in feel like coming back to something, not arriving somewhere new. I don’t know what feature that is. But that’s the thing. The platform feels like a stranger every time I open it, and that’s why I don’t open it more often. If it felt like it knew me — even a little — I’d come back more.",
+          "stage_directions": [
+            "thinks for a while",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "What about second wand?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "A way to say “this isn’t for me, please stop showing me this kind of thing.” For missions, for challenges, for emails. Something that lets me curate without feeling guilty. Right now everything that comes to me just accumulates and I can’t prune it. So the longer I’m on the platform the noisier my experience gets, instead of cleaner.",
+          "stage_directions": [
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "That’s really useful. What do you do outside the platform that probably should happen inside it?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Most of my actual learning. LinkedIn Learning when I have a specific question. Coursera for the bigger development goals. The Experience Garage is — it’s sort of an extra thing on the side. It’s not where my development actually happens.",
+          "stage_directions": [
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Why do you think LinkedIn Learning and Coursera get the “real” learning?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Because I know what I’ll find there. If I search for a topic, I get relevant courses, ranked, with reviews from people who took them. I can see how long it takes, what skill level it’s for, what I’ll learn. Everything is clear. The Experience Garage feels like — like a community board where everyone’s posted their own stuff and there’s no curation. Which is probably unfair but it’s how it feels. I don’t trust that I’ll find what I’m looking for, so I don’t look.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Anything you’ve learned to just live with?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "The emails. Like I said, I’ve stopped clicking through. I just delete them. I’ve learned to live with that being noise. Which is — that’s not really living with it, that’s just opting out of it. And — the badges and points, I guess. I’ve learned to not care about them. Which is fine for me but probably tells you something about the gamification design if a target user just decided it wasn’t for her.",
+          "stage_directions": [
+            "pause",
+            "small laugh",
+            "pause"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Closing",
+      "turns": [
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "If you were on the Experience Garage product team for a week — what’s the first thing you’d dig into?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "I think — I’d talk to people like me. People who started enthusiastic and tapered off. Not the heavy users, not the people who never joined. The ones in the middle who were almost engaged and slipped away. That’s where the answers are, I think. Maybe that’s self-serving because that’s me. But — I think you learn more from the people who almost stayed than from the people who stayed or never came.",
+          "stage_directions": [
+            "longer pause",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Honestly that’s a really sharp piece of methodological advice. We’ll take it. Anyone else we should be talking to?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Someone in a non-HQ region, definitely. Singapore is okay but it’s still relatively well-connected. Talk to someone in — I don’t know — Brazil, or somewhere where the time-zone overlap with Walldorf is hard, where they might feel further from where the platform is run. They’ll see different things. And — actually, someone whose first language isn’t English. The platform is English-only as far as I can tell, and that might be doing something to engagement in regions where English is a second or third language. I don’t know but I’d ask.",
+          "stage_directions": [
+            "thinks",
+            "pause"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Both really good suggestions. Last one — anything I didn’t ask that you wish I had?",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Maybe — the “why” of it all? Like, what is the platform actually for? I’m not entirely clear. Is it for learning? For innovation? For collaboration? For community? It seems to be trying to do all of those, and maybe that’s the problem — when I open it I don’t know which mode I’m supposed to be in. Duolingo is for learning Spanish. Just that. The Experience Garage is for — many things. And many-things platforms are hard to come back to because you have to decide what kind of session you’re having before you start. Sorry. That might be a bigger question than you wanted.",
+          "stage_directions": [
+            "pauses",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "No, that’s exactly the kind of question that’s useful. Priya, this has been really illuminating. Thank you for being candid.",
+          "stage_directions": []
+        },
+        {
+          "speaker": "participant",
+          "speaker_code": "P",
+          "text": "Thank you for letting me complain. It’s — actually it’s been good to articulate this. I’ve been feeling vaguely guilty about not using it more and now I think — it’s not really my fault. That’s a small relief. Is that useful feedback?",
+          "stage_directions": [
+            "warm smile",
+            "small laugh"
+          ]
+        },
+        {
+          "speaker": "moderator",
+          "speaker_code": "M",
+          "text": "Genuinely the most useful sentence in the whole interview. Thank you.",
+          "stage_directions": []
+        }
+      ]
+    }
+  ],
+  "end_of_transcript": "End of transcript — 29:47"
+}
